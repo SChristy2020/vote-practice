@@ -1,0 +1,523 @@
+.banner_area{
+    position: relative;
+    height: 46rem;
+    overflow: hidden;
+}
+.banner_area .bg_area{
+    background: linear-gradient(to top, #E68946 0%, #8E3333 100%);
+    clip-path: polygon(0 46%, 100% 0, 100% 100%, 0% 100%);
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    position: absolute;
+    margin: 10rem 0 0 0;
+}
+/* .banner_area .bg_area .bg_img{
+    position: absolute;
+} */
+.banner_area .bg2024{
+    background: linear-gradient(to top, #E68946 0%, #8E3333 78%, #E68946 101%);
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    position: absolute;
+    clip-path: polygon(50% 22%, 76% 11%, 76% 100%, 50% 100%);
+}
+.banner_area .text_area{
+    text-align: center;
+    padding: 8rem 0 0 0;
+    font-size: 10rem;
+    z-index: 1;
+    position: relative;
+    font-weight: 600;
+}
+.banner_area .text_area .title{
+    transform: rotate3d(-1, 2, 6, -10deg);
+    font-style:italic;
+    position: relative;
+    font-size: 10rem;
+}
+.banner_area .text_area .title .text{
+    /* content: "關鍵 2024"; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translate(-58%, -50%); */
+    color: white;
+    clip-path: polygon(0% 71%, 100% 69%, 100% 100%, 0% 100%);
+    width: 89rem;
+    height: 15rem;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+.banner_area .text_area .title .text::before {
+    /* content: "關鍵 ";
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-58%, -50%);
+    color: white;
+    white-space: nowrap;
+    mix-blend-mode: difference;
+    clip-path: polygon(0% 71%, 100% 69%, 100% 100%, 0% 100%); */
+}
+.banner_area .text_area .title .year{
+    color: white;
+}
+.banner_area .cat_area{
+    position: relative;
+    padding: 2rem 10rem 0 10rem;
+}
+.banner_area .cat_area .cat{}
+.banner_area .cat_area .cat:nth-child(1) .img{
+    animation:cat_ani 10s 0s infinite;
+}
+.banner_area .cat_area .cat:nth-child(2) .img{
+    /* transform: translate(-5rem, -2rem); */
+    animation:cat_ani 10s .3s infinite;
+    margin: -2rem 0 0 -5rem;
+}
+.banner_area .cat_area .cat:nth-child(3) .img{
+    /* transform: translate(-5rem, -2rem); */
+    animation:cat_ani 10s .5s infinite;
+    margin: -2rem 0 0 -5rem;
+}
+.banner_area .cat_area .cat:nth-child(4) .img{
+    /* transform: translate(-5rem, 0rem); */
+    animation:cat_ani 10s .7s infinite;
+    margin: -1rem 0 0 -5rem;
+}
+.banner_area .cat_area .cat .img{
+    opacity: 0;
+}
+@keyframes cat_ani {
+    0%   {opacity: 0;}
+    10% {opacity: 1;}
+    96% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@media (max-width: 575.99px) {
+    .banner_area {
+        height: 19rem;
+    }
+    .banner_area .bg_area {
+        clip-path: polygon(0 16%, 123% 0, 100% 100%, 0% 100%);
+    }
+    .banner_area .bg2024 {
+        background: linear-gradient(to top, #E68946 0%, #8E3333 47%, #E68946 101%);
+        clip-path: polygon(48% 19%, 91% 15%, 93% 100%, 50% 100%);
+    }
+    .banner_area .text_area {
+        padding: 5rem 0 0 0;
+    }
+    .banner_area .text_area .title {
+        transform: rotate3d(-1, 2, 6, -10deg);
+        font-size: 4rem;
+    }
+    .banner_area .cat_area {
+        padding: 0rem 1rem 0 1rem;
+    }
+    .banner_area .cat_area .cat .img {
+        width: 8rem;
+    }
+    .banner_area .cat_area .cat:nth-child(2) .img {
+        margin: 0rem 0 0 -2rem;
+        width: 9.5rem;
+    }
+    .banner_area .cat_area .cat:nth-child(3) .img {
+        margin: 0rem 0 0 -3rem;
+        width: 9rem
+    }
+    .banner_area .cat_area .cat:nth-child(4) .img {
+        margin: 0rem 0 0 -3rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+    .banner_area {
+        height: 19rem;
+    }
+    .banner_area .bg_area {
+        clip-path: polygon(0 16%, 123% 0, 100% 100%, 0% 100%);
+    }
+    .banner_area .bg2024 {
+        background: linear-gradient(to top, #E68946 0%, #8E3333 47%, #E68946 101%);
+        clip-path: polygon(48% 19%, 91% 15%, 93% 100%, 50% 100%);
+    }
+    .banner_area .text_area {
+        padding: 5rem 0 0 0;
+    }
+    .banner_area .text_area .title {
+        transform: rotate3d(-1, 2, 6, -5deg);
+        font-size: 4rem;
+        padding: 0rem 0 0 0;
+    }
+    .banner_area .cat_area {
+        padding: 0rem 1rem 0 1rem;
+    }
+    .banner_area .cat_area .cat .img {
+        width: 10rem;
+    }
+    .banner_area .cat_area .cat:nth-child(2) .img {
+        margin: 0rem 0 0 -2rem;
+    }
+    .banner_area .cat_area .cat:nth-child(3) .img {
+        margin: 0rem 0 0 -3rem;
+    }
+    .banner_area .cat_area .cat:nth-child(4) .img {
+        margin: 0rem 0 0 -3rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+    .banner_area {
+        height: 41rem;
+    }
+    .banner_area .cat_area {
+        padding: 2rem 7rem 0 0rem;
+    }
+    .banner_area .text_area .title {
+        transform: rotate3d(-1, 2, 6, -18deg);
+        font-size: 5rem;
+        padding: 2rem 0 0 0;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    .banner_area {
+        height: 40rem;
+    }
+    .banner_area .cat_area {
+        padding: 2rem 8rem 0 0rem;
+    }
+    .banner_area .text_area .title {
+        transform: rotate3d(-1, 2, 6, -15deg);
+        font-size: 6rem;
+        padding: 2rem 0 0 0;
+    }
+}
+@media (min-width: 1200px) {}
+@media (min-width: 1450px) {
+    .banner_area .text_area .title .text{
+        display: block;
+    }
+}
+
+
+.time_area{
+    margin: 0;
+    text-align: center;
+    padding: 3rem 0rem;
+    background: #FFFBEB;
+}
+.time_area .title_area{
+    position: relative;
+}
+.time_area .select_area::-webkit-scrollbar {
+    width: 3px;
+    height: 9px;
+}
+.time_area .select_area::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgb(177 177 177 / 40%);
+    border: 1px solid white;
+}
+.time_area .select_area::-webkit-scrollbar-track {
+    box-shadow: transparent;
+}
+.time_area .select_area::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+.time_area .title_area .title_box{
+    background-color: white;
+    border: 1px solid #9d9d9d;
+    padding: 1rem 0rem;
+    margin: 0 7rem;
+    transform: skew(0deg, -10deg);
+    box-shadow: 2px 6px 8px 1px #7b7b7b;
+}
+.time_area .title_area .title_box .title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5C3E36;
+}
+.time_area .title_area .title_box .icon{
+    position: absolute;
+    bottom: -2rem;
+    right: -2rem;
+    transform: skew(0deg, 10deg);
+    width: 4rem;
+}
+.time_area .select_area{}
+.time_area .select_area .year_area{
+    position: relative;
+    height: -webkit-fill-available;
+    z-index: 1;
+}
+.time_area .select_area .year_area .year_box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #8e333300;
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    color: #8E3333;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid #8E3333;
+    transition: .2s;
+}
+.time_area .select_area .year_area .year_box:hover,
+.time_area .select_area .year_area .year_box.active{
+    background: #8E3333;
+    color: white;
+    width: 60%;
+}
+.time_area .select_area .year_area:nth-child(1) .year_box{
+    border: 2px dashed #8E3333;
+}
+.time_area .select_area .year_area .year_box:nth-child(1){
+    /* border: 2px dashed #8E3333; */
+}
+.time_area .select_area .year_area .year_box::before,
+.time_area .select_area .year_area .year_box::after {
+    border: solid transparent;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: .2s;
+}
+.time_area .select_area .year_area .year_box::before {
+    border-width: 13px 13px 0 13px;
+    border-top-color: #8E3333;
+    bottom: -13px;
+}
+.time_area .select_area .year_area .year_box::after  {
+    border-width: 10px 10px 0 10px;
+    border-top-color: #FFFBEB;
+    bottom: -10px;
+}
+.time_area .select_area .year_area .year_box:hover::after,
+.time_area .select_area .year_area .year_box.active::after{
+    border-top-color: #8E3333;
+}
+
+.time_area .select_area .year_area .year_box .year{
+    font-size: 1.4rem;
+}
+.time_area .select_area .year_area .year_box .dot{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2rem;
+    background: #8E3333;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -3rem;
+}
+
+
+.time_area .select_area .line_area{
+    position: relative;
+    padding: 0;
+    transform: translate(0px, -24px);
+}
+.time_area .select_area .line_area .line{
+    /* border-bottom: 2px solid #744A00; */
+    border-top: 2px solid #744A00;
+    padding: 2rem;
+}
+.time_area .select_area .line_area .line::before {
+    content: "";
+    border-style: solid;
+    position: absolute;
+    width: 0;
+    height: 0px;
+    border: 14px solid;
+    border-color: transparent #744A00 transparent transparent;
+    left: -20px;
+    top: -13px;
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+}
+@media (max-width: 991.99px) {
+    .time_area {
+        padding: 3rem 0rem;
+    }
+    .time_area .title_area .title_box {
+        padding: 1rem 0rem;
+        margin: 0 12rem 4rem 12rem;
+        transform: skew(0deg, -6deg);
+    }
+    .time_area .title_area .title_box .title {
+        font-size: 1.6rem;
+    }
+    .time_area .select_area {
+        padding: 0 6rem;
+        flex-wrap: nowrap;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        position: relative;
+    }
+    .time_area .select_area .line_area {
+        transform: translate(0px, 2.8rem);
+        position: absolute;
+        bottom: 0;
+    }
+    .time_area .select_area .line_area .line {
+        /* border-bottom: 2px solid #744A00; */
+        border-top: 2px solid #744A00;
+        padding: 2rem;
+    }
+    .time_area .select_area .year_area {
+        height: 8rem;
+        width: fit-content;
+    }
+    .time_area .select_area .year_area .year_box {
+        width: 80%;
+        max-width: fit-content;
+        position: relative;
+        display: block;
+    }
+    .time_area .select_area .year_area .year_box:hover, .time_area .select_area .year_area .year_box.active {
+        width: 90%;
+    }
+    .time_area .select_area .year_area .year_box .year {
+        width: 10rem;
+        max-width: -webkit-fill-available;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    .time_area {
+        padding: 3rem 0rem 0rem 0rem;
+    }
+    .time_area .title_area .title_box {
+        padding: 1rem 0rem;
+        margin: 0 24rem 4rem 24rem;
+        transform: skew(0deg, -6deg);
+    }
+    .time_area .title_area .title_box .title {
+        font-size: 1.6rem;
+    }
+    .time_area .select_area {
+        padding: 0 6rem;
+    }
+    .time_area .select_area .year_area {
+        height: 8rem;
+    }
+}
+@media (min-width: 1200px) {}
+@media (max-width: 575.99px) {
+    .time_area .title_area .title_box {
+        margin: 0 4rem 4rem 4rem;
+    }
+}
+
+
+.chart_area{
+    position: relative;
+    padding: 4rem 0;
+}
+.chart_area .title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5C3E36;
+    padding: 0 0 2rem 0;
+}
+.chart_area .content{}
+.chart_area .content .vote_status{
+    position: relative;
+}
+.chart_area .content .vote_status .pie_area{
+    position: relative;
+}
+.chart_area .content .vote_status .pie_area .piedonut_chart{}
+.chart_area .content .vote_status .pie_area .vote_rate{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+    height: fit-content;
+    width: max-content;
+    font-size: 1.6rem;
+}
+.chart_area .content .vote_status .tip_area{
+    position: relative;
+}
+.chart_area .content .vote_status .tip_area .tip_box{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 2px solid #8E3333;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+.chart_area .content .vote_status .tip_area .tip_box::before,
+.chart_area .content .vote_status .tip_area .tip_box::after {
+    /* border: solid transparent; */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    /* left: 0; */
+    transition: .2s;
+    bottom: 0;
+    margin: auto;
+    border: solid;
+    top: 0;
+}
+.chart_area .content .vote_status .tip_area .tip_box::before {
+    border-width: 13px 13px 13px 13px;
+    border-color: transparent #8E3333 transparent transparent;
+    left: -27px;
+}
+.chart_area .content .vote_status .tip_area .tip_box::after  {
+    border-width: 13px 13px 13px 13px;
+    border-color: transparent #ffffff transparent transparent;
+    left: -24px;
+}
+.chart_area .content .vote_status .tip_area .tip_box p{
+    margin-bottom: 0.5rem;
+}
+.chart_area .content .vote_status .tip_area .tip_box p span{}
+
+.chart_area .content .bar_area{
+    position: relative;
+}
+.chart_area .content .bar_area{}
+
+.map_area{
+    padding: 0 0 2rem 0;
+}
+.map_area .title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5C3E36;
+    padding: 0 0 2rem 0;
+}
+.map_area .map_tw{
+    height: 40rem;
+}
+
+
+.mix_chart_area{}
+.mix_chart_area .title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5C3E36;
+    padding: 0 0 2rem 0;
+}

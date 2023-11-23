@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/jquery-ui.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='libs/bootstrap-5.0.0-dist/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    <div class="banner_area">
+        <div class="bg_area"></div>
+        <div class="bg2024"></div>
+        <div class="text_area">
+            <div class="title">
+                關鍵 
+                <span class="year">2024</span>
+                <span class="text">關鍵 2024</span>
+            </div>
+        </div>
+        <div class="cat_area row">
+            <div class="cat col-3">
+                <img class="img parallax" data-speed="0.025" src="img/cat_yellow.png">
+            </div>
+            <div class="cat col-3">
+                <img class="img parallax" data-speed="0.05" src="img/cat_pink.png">
+            </div>
+            <div class="cat col-3">
+                <img class="img parallax" data-speed="0.03" src="img/cat_brown.png">
+            </div>
+            <div class="cat col-3">
+                <img class="img parallax" data-speed="0.04" src="img/cat_purple.png">
+            </div>
+        </div>
+    </div>
+    <div class="time_area container-fluid row">
+        <div class="title_area col-xl-4">
+            <div class="title_box">
+                <div class="title">總統選舉<br>開票地圖</div>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7813 39.763L18.8451 30.0087L9.23818 34.0523C10.6079 36.3051 12.4816 38.2718 14.7813 39.763ZM7.01713 28.4773L22.134 22.1146L28.3554 7.18149C20.051 5.37469 11.3852 9.69523 8.00044 17.8195C6.54048 21.3238 6.27486 25.0273 7.01713 28.4773ZM41.1213 31.6184C37.6715 39.8987 28.7361 44.2278 20.2885 42.1456L33.9253 9.41381C41.3524 13.9454 44.571 23.3382 41.1213 31.6184ZM46.6598 33.9259C41.575 46.1308 27.5589 51.9028 15.3539 46.818C3.14901 41.7331 -2.62295 27.717 2.46189 15.5121C7.54674 3.30713 21.5629 -2.46483 33.7678 2.62002C45.9727 7.70486 51.7447 21.721 46.6598 33.9259Z" fill="#C90000"/>
+                </svg>
+            </div>
+            
+        </div>
+        <div class="select_area col-xl-8 row">
+            <div class="year_area col-lg-3 col-12 ">
+                <div class="year_box active">
+                    <div class="year">2024</div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="year_area col-lg-3 col-12 ">
+                <div class="year_box">
+                    <div class="year">2020</div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="year_area col-lg-3 col-12 ">
+                <div class="year_box">
+                    <div class="year">2016</div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="year_area col-lg-3 col-12 ">
+                <div class="year_box">
+                    <div class="year">2012</div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="line_area">
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="chart_area container container-fluid">
+        <h3 class="title col-12">選舉概況</h3>
+        <div class="content row">
+            <div class="vote_status col-lg-5 row">
+                <div class="col-8 pie_area">
+                    <div class="vote_rate">投票率<br><span  id="vote_rate">74.9% </span>
+                    </div>
+                    <div class="piedonut_chart" id="piedonut_chart"></div>
+                </div>
+                <div class="col-4 tip_area">
+                    <div class="tip_box">
+                        <p>有效票數：<br>
+                            <span id="vote_valid">11,098,642</span>
+                        </p>
+                        <p>無效票數：<br>
+                            <span id="vote_invalid">73,256</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bar_area col-lg-7">
+                <div class="bar_chart" id="bar_chart"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="map_area container container-fluid">
+        <h3 class="title">各縣市政黨得票率/得票數</h3>
+        <div class="filter_area row">
+            <p class="col-1">快速查找</p>
+            <div class="dropdown col-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li><button class="dropdown-item" type="button">Another action</button></li>
+                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+            </div>
+            <div class="dropdown col-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li><button class="dropdown-item" type="button">Another action</button></li>
+                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+            </div>
+            <div class="dropdown col-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li><button class="dropdown-item" type="button">Another action</button></li>
+                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+            </div>
+            <button class="btn col-2">button</button>
+        </div>
+        <div class="map_tw" id="map_tw"></div>
+    </div>
+    <div class="mix_chart_area container container-fluid">
+        <h3 class="title">歷屆政黨得票率與全國投票率變化</h3>
+        <div class="mix_chart" id="mix_chart"></div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="libs/bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="libs/TweenMax.min.js"></script>
+
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="libs/Highcharts-11.2.0/highcharts.js"></script>
+    <script src="libs/Highcharts-11.2.0/modules/exporting.js"></script>
+    <script src="libs/Highcharts-11.2.0/modules/export-data.js"></script>
+    <script src="libs/Highcharts-11.2.0/modules/accessibility.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
